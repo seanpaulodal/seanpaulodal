@@ -1,0 +1,112 @@
+<!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+           <!-- Bootstrap CSS -->
+           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <title>My Portfolio</title>
+      </head>
+      <body scroll="no" id="test">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top w-100" id="banner">
+          <div class="container-fluid">
+            <a class="navbar-brand">Odal <span class="nametag">Sean Paul</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#test">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section class="bannersec">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="brand-heading">Sean Paul Odal</h1>
+                <p class="intro-text">Front-End Web Developer & Graphic Artist</p>
+                <small>
+                  <strong>- PHL.2021 -</strong>
+                </small>
+              </div>
+            </div>
+            <div class="page-scroll">
+              <a href="#about" class="btn btn-circle box-animate">
+                  <i class="fa fa-angle-double-down animated" aria-hidden="true"></i>
+              </a>
+          </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="container">
+            <div class="row"> 
+              <div class="col-6">
+                <img src="images/me.jpg" alt="Avatar">
+              </div>
+              <div class="col-6">
+                <h2>My present</h2>
+                <p>My name is Sean Paul Odal, I currently work full time as a Web Developer.
+                  I work with a team, I create websites with a unique design and I am passionate about design.
+                  When I work I love to concentrate over a good coffee to find the optimal solution or find the right inspiration.
+                  In my free time you can find me at my home enjoying to study more in about work related. 
+                  My works have been included in the sector such as <span>HTML</span> & <span>CSS</span> and also studying the rest.
+                 Although I can boast of my skills as a graphic and web designer, I cannot say the same in the field of photography.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="content-section text-center">
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Contact</h2>
+                    <p>For business contacts, collaborations, quotes or just to say "hello" write to:</p>
+                    <h4>seanpaulodal143@gmail.com</h4>
+                    <p><small>You can also find me on:</small></p>
+                    <ul class="list-inline banner-social-buttons">
+                      <li><a href="#" class="btn btn-default btn-lg facebook-color"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                      </li>
+                      <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Gmail</span></a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+      </section>
+        <!-- <a href="#banner">Go Up</a> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function(){
+           $("a").on('click', function(event) {
+              if (this.hash !== "") {
+                event.preventDefault();
+                 var hash = this.hash;
+               $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function(){
+               window.location.hash = hash;
+                });
+              } // End if
+            });
+          });
+          </script>
+      </body>
+    </html>
+
+    

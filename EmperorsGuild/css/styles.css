@@ -1,0 +1,234 @@
+ body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2c3e50; /* Dark background color */
+      color: #ecf0f1; /* Light text color */
+    }
+
+    header {
+      background-color: #3498db; /* Blue header background color */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #2980b9; /* Dark blue navigation background color */
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+        color: #ffcc00; /* Yellow on hover */
+    }
+
+    section {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .cta-section {
+      background-color: #e74c3c; /* Red CTA section background color */
+      color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .cta-section h2 {
+      color: #ffcc00; /* Yellow heading color */
+    }
+
+    .cta-button {
+      background-color: #ffcc00;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .achievements-section {
+      background-color: #27ae60; /* Green achievements section background color */
+      padding: 40px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .achievements-section h2 {
+      color: #fff;
+    }
+
+    .achievements-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .achievements-list li {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #ecf0f1; /* Light text color */
+    }
+
+    .featured-games-section {
+      background-color: #f39c12; /* Orange featured games section background color */
+      padding: 40px;
+      border-radius: 10px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .featured-games-section h2 {
+      color: #fff;
+    }
+
+    .featured-games-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .featured-game {
+      margin: 10px;
+    }
+
+    .featured-game img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .testimonials-section {
+  background-color: #9b59b6; /* Purple testimonials section background color */
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  color: #fff;
+}
+
+.testimonials-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  background-color: #fff;
+  color: #333;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+    .events-section {
+      background-color: #e67e22; /* Orange events section background color */
+      padding: 40px;
+      border-radius: 10px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .events-section h2 {
+      color: #fff;
+    }
+
+    .events-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .events-list li {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #ecf0f1; /* Light text color */
+    }
+
+    footer {
+      background-color: #34495e; /* Dark footer background color */
+      color: #ecf0f1; /* Light text color */
+      text-align: center;
+      padding: 10px;
+      bottom: 0;
+      width: 100%;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #34495e; /* Dark blue-gray border color */
+    }
+    
+    th {
+        background-color: #3498db; /* Blue header background color */
+        color: #fff;
+    }
+    
+    td {
+        background-color: #2c3e50; /* Dark background color for table cells */
+        color: #ecf0f1; /* Light text color for table cells */
+    }
+    
+    tbody tr:hover {
+        background-color: #34495e; /* Dark blue-gray background color on hover */
+        color: #fff; /* White text color on hover */
+    }
+    
+    /* Status Styles */
+    .online {
+        color: #27ae60; /* Green for online status */
+    }
+    
+    .offline {
+        color: #e74c3c; /* Red for offline status */
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 768px) {
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 10px;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
